@@ -45,11 +45,26 @@ main{
     max-height: 72vh;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     overflow-y: scroll;
 }
 .card2{
+    display: flex;
+    background-image: url(../img/card.b45a05ac.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     margin: 0.5rem;
-    text-align: center;
+    align-items: center;
+    height: 40vh;
+    border: none;
+}
+
+.card2 .card-body{
+    display: flex;
+    align-items: center;
+}
+.card-nombre{
+    color: white;
 }
 .prese {
     text-align: center;
