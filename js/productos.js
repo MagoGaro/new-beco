@@ -4,7 +4,7 @@ createApp({
     data(){
         return{
             productos: [],
-            url: 'http://localhost:3000/productos',
+            url: 'https://vps-4247746-x.dattaweb.com/productos',
             cargando: true,
             error: false,
             searchQuery: '',
