@@ -26,7 +26,6 @@
         <a href="../../index.html"><img src="../../img/logo.png" alt="beconnected"></a>
         <h6>Internet para Viajeros</h6>
       </div>
-      <h1>Paquetes de Viaje</h1>
       <section v-if="error">
         <p>Lo sentimos, no podemos mostrarte los productos en este momento</p>
       </section>
@@ -35,13 +34,14 @@
             <div class="d-flex justify-content-center align-items-center">
               <div class="spinner-border text-primary spinner-border-sm"
                 role="status">
-                <span class="visually-hidden">Loading...</span>
+                <span class="visually-hidden">Cargando...</span>
               </div>
             </div>
           </section>
           <section class="galeria" v-else>
+            <h1>Destinos Disponibles</h1>
             <div class="m_buscador">
-              <input type="text" class="buscar_p" v-model="searchQuery" placeholder="Seleccione Destino...">
+              <input type="text" class="buscar_p" v-model="searchQuery" placeholder="Buscar Destino...">
             </div>
             <div class="card card2" style="width: 18rem;" v-for="producto in filteredProductos" :key="producto.id">
               
