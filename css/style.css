@@ -48,6 +48,12 @@ main{
     align-items: center;
     overflow-y: scroll;
 }
+.m_buscador{
+    width: 100%;
+}
+.m_buscador .buscar_p{
+    width: 50%;
+}
 .card2{
     display: flex;
     background-image: url(../img/card.b45a05ac.png);
