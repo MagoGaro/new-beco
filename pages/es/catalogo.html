@@ -40,12 +40,15 @@
             </div>
           </section>
           <section class="galeria" v-else>
-            <div class="card card2" style="width: 18rem;" v-for="p in productos">
+            <div class="m_buscador">
+              <input type="text" class="buscar_p" v-model="searchQuery" placeholder="Seleccione Destino...">
+            </div>
+            <div class="card card2" style="width: 18rem;" v-for="producto in filteredProductos" :key="producto.id">
               
               <div class="card-body">
-                <h5 class="card-title card-nombre">{{p.nombre}}</h5>
+                <h5 class="card-title card-nombre">{{producto.nombre}}</h5>
               </div>
-              <a href="#" class="btn btn-dark">Ver detalles</a>
+              <a :href="producto.enlace" class="btn btn-dark">Ver detalles</a>
             </div>
           </section>
         </section>
