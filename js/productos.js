@@ -4,11 +4,12 @@ createApp({
     data(){
         return{
             productos: [],
-            url: 'https://vps-4247746-x.dattaweb.com/productos',
+            url: 'http://localhost:3000/productos',
             cargando: true,
             error: false,
-            categorias:[],
-            url_c: 'https://vps-4247746-x.dattaweb.com/categorias',
+            searchQuery: '',
+            //categorias:[],
+            //url_c: 'http://localhost:3000/categorias',
         }
     },
     methods:{
@@ -56,8 +57,15 @@ createApp({
         template:' <footer> <section class="piesito"> <p> <i class="fa-solid fa-copyright"></i> Copyright</p> <h5>Desarrollado por el Grupo 21</h5> <p>Para Codo a Codo - NodeJS Full Stack</p> </section> </footer>'
       }
   } ,
+  computed: {
+    filteredProductos() {
+      return this.productos.filter(producto => {
+        return producto.nombre.toLowerCase().includes(this.searchQuery.toLowerCase());
+      });
+    }
+  },
     created(){
         this.fetchApi(this.url);
-        this.fetchApi_c(this.url_c);
+        //this.fetchApi_c(this.url_c);
     }
 }).mount('#app')
