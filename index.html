@@ -1,93 +1,127 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <title>beconnected - Inicio</title>
-  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Orbitron:wght@400;600;700&family=Press+Start+2P&family=Russo+One&family=Staatliches&family=Vidaloka&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Orbitron:wght@400;600;700&family=Press+Start+2P&family=Russo+One&family=Staatliches&family=Vidaloka&display=swap" rel="stylesheet">
+
+    <title data-traduccion="web-t">beconnected - Internet para viajeros</title>
 </head>
-
-<body >
-  <div id="app">
-    <header class="cabe_ini">
-      <div class="logo_ini">
-        <img src="./img/logo.png" alt="beconnected">
-        <h6>Internet para Viajeros</h6>
-      </div>
-      <div>
-        <select id="miSelect" onchange="redirigir()">
-          <option value="#">Español</option>
-          <option value="./pages/en/index.html">Ingles</option>
-          <option value="./pages/pr/index.html">Portugues</option>
-          <option value="./pages/fr/index.html">Frances</option>
-        </select>
-      </div>
+<body>
+    <header class="cabecera-ini">
+        <div class="logo">
+            <img src="./assets/img/logo.png" alt="Logo beconnected">
+        </div>
+        <div class="sel-idioma">
+            <select id="idioma">
+                <option value="es">Español</option>
+                <option value="en">Ingles</option>
+                <option value="fr">Frances</option>
+                <option value="pr">Portugues</option>
+                <option value="it">Italiano</option>
+            </select>
+        </div>
+        <div class="ini-pres">
+            <div class="main-titulo">
+                <div>
+                    <h1 data-traduccion="msg-titulo-inicio">¿Vas a viajar?</h1>
+                    <span data-traduccion="msg-subtitulo-inicio">msg-subtitulo-inicio</span>
+                </div>
+            </div>
+            <div class="main-button">
+                <a data-traduccion="msg-button-inicio" href="#de_donde_eres">Contratá ya!</a>
+            </div>
+        </div>
     </header>
-  <main>
-    <section class="container contenido">
-      <h2 class="soy_de">Vivo en..</h2>
-      <article class="card prese">
-        <h3 class="card-title card-header">Argentina</h3>
-        <img  src="./img/Argentina.jpeg" alt="FotoCamila" class="card-img-top fotoperfil">
-        <div class="card-body">
-          <a href="./pages/es/catalogo.html"><button class="btn btn-primary">Acceder</button></a>
-        </div>
-    
-      
-      </article>
+    <main>
+        <section id="de_donde_eres">
+            <div>
+                <h2 data-traduccion="msg-titulo-seccion-2" class="titulo-main">¿De dónde eres?</h2>
+            </div>
+            <div class="container contenido">
+                <article class="card prese">
+                    <h3 class="card-title card-header">Argentina</h3>
+                    <img  src="./assets/img/Argentina.jpeg" alt="FotoArgentina" class="card-img-top fotoperfil">
+                    <div class="card-body">
+                        <h3>Vivo en Argentina</h3>
+                        <a href="./pages/es/catalogo.html"><button class="btn btn-primary">Acceder</button></a>
+                    </div>
+                </article>
+                <article class="card prese">
+                    <h3 class="card-title card-header">España</h3>
+                    <img  src="./assets/img/Espana.png" alt="FotoEspaña" class="card-img-top fotoperfil">
+                    <div class="card-body">
+                        <h3>Vico en España</h3>
+                        <a href="./pages/es/catalogo.html"><button class="btn btn-primary">Acceder</button></a>
+                    </div>
+                </article>
+                <article class="card prese">
+                    <h3 class="card-title card-header">Resto del Mundo</h3>
+                    <img  src="./assets/img/Mundo.jpg" alt="FotoMundo" class="card-img-top fotoperfil">
+                    <div class="card-body">
+                        <h3>Otro País</h3>
+                      <a href="./pages/es/catalogo.html"><button class="btn btn-primary">Acceder</button></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="tecno_esim">
+            <p>¿Ya descubriste la Tecnologia eSIM?</p>
+            <p>Es un chis virtual que se instala directamente en tu teléfono y te permite estar siempre conectado en el extranjero. Disfruta del mejor internet sin altos costos del roaming global.</p>
+            <p>Contamos con planes desde 1GB para más de 200 paises y regiones.</p>
+            <p>Contratá, instala y recarga segun lo necesites.</p>
+        </section>
+        <section id="info_app">
+            <div>
+                <img src="./assets/img/promo.77802ef7.png" alt="">
+            </div>
+            <div>
+                <h6>Descubre un mundo de libertad</h6>
+                <h2>¿Estas Listo? Comienza Hoy.</h2>
+                <p>Descarga la aplicacion de beconnected para administrar, comprar y recargar tus eSIM donde sea y cuando sea!</p>
+                <p>Descarga a máxima velocidad</p>
+                <p>Inicia el consumo a llegar a destino</p>
+                <p>Recarga cuando te quedes sin saldo</p>
 
-      <article class="card prese">
-        <h3 class="card-title card-header">España</h3>
-        <img  src="./img/Espana.png" alt="FotoFacundo" class="card-img-top fotoperfil">
-        <div class="card-body">
-          
-          <button class="btn btn-primary">Acceder</button>
-          
-        </div>
-      
-      </article>
+                <div>
+                    <img src="./assets/img/qr_descarga.png" alt="">
+                    <p>Escanea con tu movil para descargar.</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="./assets/img/appstore.be19cd68.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/img/googleplay.ef88ffda.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
 
-      <article class="card prese">
-        <h3 class="card-title card-header">Resto del Mundo</h3>
-        <img  src="./img/Mundo.jpg" alt="FotoGabriel" class="card-img-top fotoperfil">
-        <div class="card-body">
-          
-          <button class="btn btn-primary">Acceder</button>
-          
-        </div>
-      
-      </article>
-    </section>
-
-  </main>
-
-</div>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+    </script>
 
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-   <!-- Iconos Fontawesome -->
-   <script src="https://kit.fontawesome.com/216116f202.js" crossorigin="anonymous"></script>
-  
-  <script src="./js/main.js"></script>
-  <script src="./js/productos.js"></script>
+    <!-- Iconos Fontawesome -->
+    <script src="https://kit.fontawesome.com/216116f202.js" crossorigin="anonymous"></script>
 
+    <script src="./js/main.js"></script>
 </body>
-
 </html>
