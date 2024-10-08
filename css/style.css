@@ -115,6 +115,52 @@
     height: 20vh;
 }
 
+#info_app{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#info_app .contenido-der{
+    width: 100%;
+    justify-content: center;
+}
+
+.Qr{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.pie-info{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.pie-info div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.pie-info div a{
+    display: flex;
+    width: 100%;
+}
+.pie-info div a .boton-app{
+    width: 100%;
+}
+
+footer{
+    background-color:#1d2225;
+}
+
 
 /* Teléfonos en modo horizontal o tabletas pequeñas */
 @media (min-width: 577px) and (max-width: 767px) {
@@ -158,4 +204,18 @@
     .prese{
         width: 33%;
     }
+    #info_app div{
+        width: 50%;
+    }
+    #info_app .contenido-der{
+        width: 50%;
+    }
+    #info_app div .app{
+        width: 100%;
+    }
+    .pie-info{
+        width: 100%;
+        justify-content: space-between;
+    }
+
 }
