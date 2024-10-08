@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-size: 16px;
     text-decoration: none;
+    list-style: none;
 }
 
 .cabecera-ini{
@@ -161,6 +162,59 @@ footer{
     display: flex;
     width: 100%;
     background-color:#1d2225;
+}
+
+footer .sociales{
+    display: flex;
+    width: 100%;
+    align-items:center;
+}
+
+.sociales ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.fa-instagram::after, .fa-youtube-play::after, .fa-facebook::after,.fa-tiktok::after{
+    content: " Instagram";
+    color: #ffff;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fa-youtube-play::after{
+    content: " YouTube";
+}
+
+.fa-facebook::after{
+    content: " Facebook";
+}
+
+.fa-tiktok::after{
+    content: " TikTok";
+}
+
+.fa-instagram:hover{
+    color: #c95ee8;
+}
+
+.fa-youtube-play:hover{
+    color: #f93131;
+}
+
+.fa-facebook:hover{
+    color: #3731ea;
+}
+
+.fa-tiktok:hover{
+    color: #0f0f1450;
 }
 
 
