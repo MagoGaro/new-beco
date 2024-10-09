@@ -201,19 +201,19 @@ footer .sociales{
     content: " TikTok";
 }
 
-.fa-instagram:hover{
+.fa-instagram:hover, .fa-instagram:hover::after{
     color: #c95ee8;
 }
 
-.fa-youtube-play:hover{
+.fa-youtube-play:hover, .fa-youtube-play:hover::after{
     color: #f93131;
 }
 
-.fa-facebook:hover{
+.fa-facebook:hover, .fa-facebook:hover::after{
     color: #3731ea;
 }
 
-.fa-tiktok:hover{
+.fa-tiktok:hover, .fa-tiktok:hover::after{
     color: #0f0f1450;
 }
 
